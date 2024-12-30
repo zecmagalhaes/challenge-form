@@ -1,0 +1,25 @@
+#invite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background-image: url(../assets/images/event.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  & h1 {
+    font: var(--textlogo);
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #invite {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+  }
+}
