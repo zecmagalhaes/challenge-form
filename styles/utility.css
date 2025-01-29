@@ -1,0 +1,11 @@
+
+.text-logo {
+  font: var(--textlogo);
+  color: var(--text-heading);
+}
+
+.body-md {
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+

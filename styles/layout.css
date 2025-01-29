@@ -5,17 +5,20 @@
   overflow: hidden;
 }
 
+body {
+  background-color: var(--shape-background);
+}
+
 aside {
   background-image: url(../assets/images/event.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
-  & h1 {
-    font: var(--textlogo);
-    color: white;
-  }
+  margin: 1rem;
+  border-radius: .3125rem;
+  border: 2px solid red;
 }
+
 
 @media (max-width: 768px) {
   #invite {
