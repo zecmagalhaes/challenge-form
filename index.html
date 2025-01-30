@@ -5,23 +5,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>YouInvite</title>
   </head>
   <body>
     <div id="invite">
-        <aside>
-          <header>
-            <img src="assets/icons/Logo.svg" alt="ícone de festa">
-            <h1 class="text-logo">YouInvite</h1>
-            <p class="body-md">Crie um convite digital para o seu evento</p>
-          </header>
-        </aside>
+      <aside>
+        <header>
+          <img src="assets/icons/Logo.svg" alt="ícone de festa" />
+          <h1 class="text-logo">You Invite</h1>
+          <p class="body-md">Crie um convite digital para o seu evento</p>
+        </header>
+      </aside>
       <main>
-        <div class="main-container">
-          <h1>Crie seu convite</h1>
-        </div>
+        <h1 class="heading-md">Crie seu convite</h1>
+        <form>
+          <legend class="legend-wraper">
+            <img src="assets/icons/calendar.svg" alt="Imagem de Calendário" />
+            <span class="heading-sm">Sobre o evento</span>
+          </legend>
+          <div class="input-wrapper">
+            <label for="name-event" class="body-sm">Título </label>
+            <input type="text" placeholder="Nome do evento" id="name-event" />
+          </div>
+          <fieldset class="input-wrapper-date">
+            <div class="input-wrapper">
+              <label for="start-event" class="body-sm">Início </label>
+              <input
+                type="date"
+                placeholder="Nome do evento"
+                id="start-event"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="teste" class="body-sm">Fim </label>
+              <input type="date" placeholder="Nome do evento" id="end-event" />
+            </div>
+          </fieldset>
+        </form>
       </main>
     </div>
   </body>

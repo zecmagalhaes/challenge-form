@@ -9,10 +9,10 @@
   --font-family-baloo2: "Baloo 2";
   --font-family-opensans: "Open Sans", serif;
   --textlogo: 400 2.5rem var(--font-family-leckerlione);
-  --heading-md: 700 1.75rem var(--font-family);
-  --heading-sm: 700 1.125rem var(--font-family);
+  --heading-md: 700 1.75rem var(--font-family-baloo2);
+  --heading-sm: 700 1.125rem var(--font-family-baloo2);
   --body-md: 400 1rem var(--font-family-opensans);
-  --body-sm: 400 0.875rem var(--font-family);
+  --body-sm: 400 0.875rem var(--font-family-opensans);
   --body-xs: 400 0.75rem var(--font-family);
 
   /* text */

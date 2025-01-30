@@ -1,4 +1,3 @@
-
 .text-logo {
   font: var(--textlogo);
   color: var(--text-heading);
@@ -9,3 +8,17 @@
   color: var(--text-heading);
 }
 
+.heading-md {
+  font: var(--heading-md);
+  color: var(--text-heading);
+}
+
+.heading-sm {
+  font: var(--heading-sm);
+  color: var(--text-heading);
+}
+
+.body-sm {
+  font: var(--body-sm);
+  color: var(--text-body);
+}
