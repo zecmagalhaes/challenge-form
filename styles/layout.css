@@ -6,7 +6,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   gap: 0.75rem;
   margin: 2vw;
 }
@@ -41,6 +41,7 @@ form {
 }
 
 input,
+textarea,
 select {
   appearance: none;
   width: 100%;
@@ -48,8 +49,17 @@ select {
   border-radius: 0.5rem;
   border: 1px solid var(--input-stroke);
   padding: 0.75rem 1rem;
+
+  color: var(--text-body);
+  font: var(--body-sm);
 }
 
+input[type="date"]::-webkit-datetime-edit {
+  color: var(--text-body);
+  font: var(--body-sm);
+}
+
+textarea::placeholder,
 input::placeholder {
   font: var(--body-sm);
 }

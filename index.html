@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/index.css" />
-    <title>YouInvite</title>
-  </head>
-  <body>
-    <div id="invite">
-      <aside>
-        <header>
-          <img src="assets/icons/Logo.svg" alt="ícone de festa" />
-          <h1 class="text-logo">You Invite</h1>
-          <p class="body-md">Crie um convite digital para o seu evento</p>
-        </header>
-      </aside>
-      <main>
-        <h1 class="heading-md">Crie seu convite</h1>
-        <form>
-          <legend class="legend-wraper">
-            <img src="assets/icons/calendar.svg" alt="Imagem de Calendário" />
-            <span class="heading-sm">Sobre o evento</span>
-          </legend>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <title>YouInvite</title>
+</head>
+
+<body>
+  <div id="invite">
+    <aside>
+      <header>
+        <img src="assets/icons/Logo.svg" alt="ícone de festa" />
+        <h1 class="text-logo">You Invite</h1>
+        <p class="body-md">Crie um convite digital para o seu evento</p>
+      </header>
+    </aside>
+    <main>
+      <h1 class="heading-md">Crie seu convite</h1>
+      <form>
+        <legend class="legend-wraper">
+          <img src="assets/icons/calendar.svg" alt="Imagem de Calendário" />
+          <span class="heading-sm">Sobre o evento</span>
+        </legend>
+        <div class="input-wrapper">
+          <label for="name-event" class="body-sm">Título </label>
+          <input type="text" placeholder="Nome do evento" id="name-event" />
+        </div>
+        <fieldset class="input-wrapper-date">
           <div class="input-wrapper">
-            <label for="name-event" class="body-sm">Título </label>
-            <input type="text" placeholder="Nome do evento" id="name-event" />
+            <label for="start-event" class="body-sm">Início </label>
+            <input type="date" placeholder="Nome do evento" id="start-event" />
           </div>
-          <fieldset class="input-wrapper-date">
-            <div class="input-wrapper">
-              <label for="start-event" class="body-sm">Início </label>
-              <input
-                type="date"
-                placeholder="Nome do evento"
-                id="start-event"
-              />
-            </div>
-            <div class="input-wrapper">
-              <label for="teste" class="body-sm">Fim </label>
-              <input type="date" placeholder="Nome do evento" id="end-event" />
-            </div>
+          <div class="input-wrapper">
+            <label for="end-event" class="body-sm">Fim </label>
+            <input type="date" placeholder="Nome do evento" id="end-event" />
+          </div>
+        </fieldset>
+
+        <fieldset class="radio-input-wrapper">
+          <div class="input-wrapper">
+            <label for="in-person" class="body-sm">Tipo</label>
+            <fieldset class="radio-wrapper">
+              <div class="radio-inner">
+                <input type="radio" name="in-person" id="in-person" />
+                <img src="assets/icons/presencial.svg" alt="ícone presencial" />
+                <label for="in-person" class="body-sm-bd">Presencial</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="online" id="online" />
+                <img src="assets/icons/câmera.svg" alt="ícone de câmera" />
+                <label for="online" class="body-sm-bd">Online</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="local" class="body-sm">Local</label>
+            <input type="text" placeholder="Link ou endereço" id="local" />
+          </div>
+
+        </fieldset>
+        <div class="input-wrapper">
+          <label for="detail-event" class="body-sm">Descrição</label>
+          <textarea name="detail-event" id="detail-event" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+        </div>
+
+        <legend class="legend-wraper">
+          <img src="assets/icons/customize.svg" alt="Imagem de customização" />
+          <span class="heading-sm">Personalização</span>
+        </legend>
+        <div class="input-wrapper">
+          <legend class="body-sm">Cor principal</legend>
+          <fieldset class="radio-option-color">
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-blue" value="blue"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-navy" value="navy"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-purple" value="purple"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-fuschia" value="fuschia"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-pink" value="pink"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-red" value="red"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-orange" value="orange"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-yellow" value="yellow"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-lime" value="lime"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-green" value="green"/>
+            <input class="radio-inner-color" type="radio" name="color-option" id="color-cyan" value="cyan"/>
           </fieldset>
-        </form>
-      </main>
-    </div>
-  </body>
+        </div>
+  </div>
+  </form>
+  </main>
+  </div>
+</body>
 </html>

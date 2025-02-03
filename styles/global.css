@@ -13,6 +13,7 @@
   --heading-sm: 700 1.125rem var(--font-family-baloo2);
   --body-md: 400 1rem var(--font-family-opensans);
   --body-sm: 400 0.875rem var(--font-family-opensans);
+  --body-sm-bd: 600 0.875rem var(--font-family-opensans);
   --body-xs: 400 0.75rem var(--font-family);
 
   /* text */
@@ -37,4 +38,17 @@
   --shape-body: #212427;
   --shape-button: #2d3136;
   --shape-hover: #383d42;
+
+  /* customize radio */
+  --blue-radio: #59B2FF;
+  --navy-radio: #6A59FF;
+  --purple-radio: #B259FF;
+  --fuschia-radio: #FF59F9;
+  --pink-radio: #FF598B;
+  --red-radio: #FF5959;
+  --orange-radio: #FF8B59;
+  --yellow-radio: #FFCD59;
+  --lime-radio: #E1FF59;
+  --green-radio: #59FF91;
+  --cyan-radio: #59FFF9;
 }

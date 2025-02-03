@@ -22,3 +22,8 @@
   font: var(--body-sm);
   color: var(--text-body);
 }
+
+.body-sm-bd {
+  font: var(--body-sm-bd);
+  color: var(--text-body);
+}

@@ -1,0 +1,95 @@
+#color-blue {
+  background-color: var(--blue-radio);
+}
+
+#color-navy {
+  background-color: var(--navy-radio);
+}
+
+#color-purple {
+  background-color: var(--purple-radio);
+}
+
+#color-fuschia {
+  background-color: var(--fuschia-radio);
+}
+
+#color-pink {
+  background-color: var(--pink-radio);
+}
+
+#color-red {
+  background-color: var(--red-radio);
+}
+
+#color-orange {
+  background-color: var(--orange-radio);
+}
+
+#color-yellow {
+  background-color: var(--yellow-radio);
+}
+
+#color-lime {
+  background-color: var(--lime-radio);
+}
+
+#color-green {
+  background-color: var(--green-radio);
+}
+
+#color-cyan {
+  background-color: var(--cyan-radio);
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  background-color: var(--input-base);
+  padding: 0.375rem;
+  border: solid 0.0625rem var(--input-stroke);
+  border-radius: 0.5rem;
+}
+
+.radio-input-wrapper {
+  display: flex;
+  flex: 1fr 1fr;
+  gap: 0.625rem;
+
+  .input-wrapper {
+    width: 100%;
+  }
+}
+
+.radio-option-color {
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid red;
+}
+
+.radio-inner-color {
+  background-color: var(--shape-button);
+  border-radius: 60%;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: .5rem solid var(--shape-button);
+}
+
+.radio-inner {
+  background-color: var(--shape-button);
+  border-radius: 0.3185rem;
+
+  display: flex;
+  justify-items: center;
+  gap: 0.6rem;
+  padding: 0.3rem 0.65rem;
+
+  & input,
+  & input:hover {
+    all: unset;
+  }
+}
+
