@@ -27,3 +27,7 @@
   font: var(--body-sm-bd);
   color: var(--text-body);
 }
+
+.gap-16 {
+  margin-top: 1rem;
+}
