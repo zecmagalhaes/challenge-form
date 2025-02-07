@@ -28,6 +28,10 @@
   color: var(--text-body);
 }
 
+.body-sm-wt {
+  font: var(--body-sm);
+  color: var(--text-heading);
+}
 .gap-16 {
   margin-top: 1rem;
 }

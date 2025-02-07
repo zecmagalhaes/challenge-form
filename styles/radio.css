@@ -101,7 +101,6 @@ input[type="radio"]:checked + .radio-custom-inperson {
   background-image: url("../assets/icons/in-person-after.svg");
 }
 
-
 .radio-option-color {
   display: flex;
 
@@ -113,7 +112,6 @@ input[type="radio"]:checked + .radio-custom-inperson {
 .radio-inner-color {
   background-color: var(--shape-button);
   border-radius: 60%;
-  display: inline-block;
   gap: 0.5rem;
   padding: 0.75rem;
   width: 0.5rem;
@@ -124,12 +122,12 @@ input[type="radio"]:checked + .radio-custom-inperson {
 
 .radio-inner-color:hover{
   color: white;
-  border: .3rem solid;
+  border: 0.3rem solid;
 }
 
 .radio-inner-color:checked{
   color: white;
-  border: .3rem solid;
+  border: 0.3rem solid;
 }
 
 .input-wrapper-radio {
