@@ -79,6 +79,7 @@ input::placeholder {
 .input-wrapper-date {
   display: flex;
   gap: 0.625rem;
+
   .input-wrapper {
     width: 100%;
   }

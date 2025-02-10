@@ -116,16 +116,16 @@ input[type="radio"]:checked + .radio-custom-inperson {
   padding: 0.75rem;
   width: 0.5rem;
   height: 0.5rem;
-  border: .3rem solid var(--shape-button);
+  border: 0.3rem solid var(--shape-button);
   cursor: pointer;
 }
 
-.radio-inner-color:hover{
+.radio-inner-color:hover {
   color: white;
   border: 0.3rem solid;
 }
 
-.radio-inner-color:checked{
+.radio-inner-color:checked {
   color: white;
   border: 0.3rem solid;
 }

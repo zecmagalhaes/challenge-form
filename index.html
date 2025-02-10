@@ -163,20 +163,38 @@
           </label>
         </fieldset>
 
-        <div class="input-wrapper gap-16">
-          <label for="name-event" class="body-sm">Estilo</label>
-        </div>
-          <fieldset class="check-color-theme">
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider"></span>
-            </label>
-            <span class="toggle-label body-sm-wt">Escuro</span>
-          </fieldset>
+        <fieldset class="input-wrapper-date gap-16">
+          <div class="style-space">
+            <div class="input-wrapper">
+              <label for="name-event" class="body-sm">Estilo</label>
+            </div>
+            <div class="container-options">
+              <fieldset class="check-color-theme">
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <span class="toggle-label body-sm-wt">Escuro</span>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="file-upload" class="body-sm">Foto de capa</label>
+            <div class="custom-file-upload">
+              <label for="file-upload" class="file-label">
+                <span class="upload-icon"></span>
+                <span class="body-sm-bd">Selecionar</span>
+              </label>
+              <input type="file" id="file-upload" required>
+              <span class="file-name">Nenhum arquivo selecionado</span>
+            </div>
+          </div>
+        </fieldset>
   </div>
   </form>
   </main>
   </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
