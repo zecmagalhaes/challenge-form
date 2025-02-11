@@ -58,6 +58,10 @@ input[type="date"]::-webkit-datetime-edit {
   font: var(--body-sm);
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 textarea::placeholder,
 input::placeholder {
   font: var(--body-sm);
@@ -67,6 +71,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 0.325rem;
+  margin-top: 1rem;
   padding-bottom: 1.25rem;
 }
 

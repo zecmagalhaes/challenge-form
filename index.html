@@ -37,11 +37,11 @@
         <fieldset class="input-wrapper-date">
           <div class="input-wrapper">
             <label for="start-event" class="body-sm">Início</label>
-            <input type="date" placeholder="Nome do evento" id="start-event" />
+            <input type="date" id="start-event" />
           </div>
           <div class="input-wrapper">
             <label for="end-event" class="body-sm">Fim</label>
-            <input type="date" placeholder="Nome do evento" id="end-event" />
+            <input type="date" id="end-event" />
           </div>
         </fieldset>
 
@@ -191,6 +191,27 @@
             </div>
           </div>
         </fieldset>
+
+        <legend class="legend-wraper">
+          <img src="assets/icons/contact.svg" alt="Imagem de customização" />
+          <span class="heading-sm">Dados para contato</span>
+        </legend>
+        <div class="input-wrapper">
+          <label for="name-event" class="body-sm">Nome</label>
+          <input type="text" placeholder="Nome completo" id="name-event" required/>
+        </div>
+        <fieldset class="input-wrapper-date">
+          <div class="input-wrapper">
+            <label for="start-event" class="body-sm">E-mail</label>
+            <input type="email" placeholder="exemplo@email.com" id="start-event" required/>
+          </div>
+          <div class="input-wrapper">
+            <label for="end-event" class="body-sm">Telefone</label>
+            <input type="text" placeholder="(54) 99999-9999" id="end-event" />
+          </div>
+        </fieldset>
+
+                                                                                  
   </div>
   </form>
   </main>
