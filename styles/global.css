@@ -1,40 +1,54 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --font-family: "Leckerli One", "Baloo 2", "Open Sans", serif;
-  --textlogo: 400 2.5rem var(--font-family);
-  --heading-md: 700 1.75rem var(--font-family);
-  --heading-sm: 700 1.125rem var(--font-family);
-  --body-md: 400 1rem var(--font-family);
-  --body-sm: 400 0.875rem var(--font-family);
+  --font-family-leckerlione: "Leckerli One";
+  --font-family-baloo2: "Baloo 2";
+  --font-family-opensans: "Open Sans", serif;
+  --textlogo: 400 2.5rem var(--font-family-leckerlione);
+  --heading-md: 700 1.75rem var(--font-family-baloo2);
+  --heading-sm: 700 1.125rem var(--font-family-baloo2);
+  --body-md: 400 1rem var(--font-family-opensans);
+  --body-sm: 400 0.875rem var(--font-family-opensans);
+  --body-sm-bd: 600 0.875rem var(--font-family-opensans);
   --body-xs: 400 0.75rem var(--font-family);
-  
+
   /* text */
-  --text-body:#C8CDD0;
-  --text-heading: #F9F9F9; 
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
 
-/* brand color */
---brand-ligth: #59B2FF;
---brand-mid: #3487CF;
---brand-dark: #1D6FB6;
+  /* brand color */
+  --brand-ligth: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
 
-/* feedback color */
---danger: #FF5959;
+  /* feedback color */
+  --danger: #ff5959;
 
-/* Input */
---input-base: #1C1F21;
---input-stroke: #363B40;
---input-placeholder: #869198;
+  /* Input */
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
 
-/* shape */
---shape-background: #131516;
---shape-body: #212427;
---shape-button: #2D3136;
---shape-hover: #383D42;
+  /* shape */
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
 
+  /* customize radio */
+  --blue-radio: #59B2FF;
+  --navy-radio: #6A59FF;
+  --purple-radio: #B259FF;
+  --fuschia-radio: #FF59F9;
+  --pink-radio: #FF598B;
+  --red-radio: #FF5959;
+  --orange-radio: #FF8B59;
+  --yellow-radio: #FFCD59;
+  --lime-radio: #E1FF59;
+  --green-radio: #59FF91;
+  --cyan-radio: #59FFF9;
 }
-

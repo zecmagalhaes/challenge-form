@@ -1,8 +1,18 @@
+body {
+  background-color: var(--shape-background);
+}
+
 #invite {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  overflow: hidden;
+  gap: 0.75rem;
+  margin: 2vw;
+}
+
+header {
+  display: grid;
+  gap: 0.625rem;
 }
 
 aside {
@@ -10,10 +20,84 @@ aside {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 2vw;
+  border-radius: 0.3125rem;
+}
 
-  & h1 {
-    font: var(--textlogo);
-    color: white;
+main {
+  overflow: auto;
+  background-color: var(--shape-body);
+  border-radius: 0.3125rem;
+  padding: 6rem;
+}
+
+fieldset {
+  border: none;
+}
+
+form {
+  margin: 1rem 0;
+}
+
+a {
+  font-family: var(--body-sm);
+  color: var(--brand-ligth);
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  background-color: var(--input-base);
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+
+  color: var(--text-body);
+  font: var(--body-sm);
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: var(--text-body);
+  font: var(--body-sm);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+textarea::placeholder,
+input::placeholder {
+  font: var(--body-sm);
+}
+
+hr {
+  margin-top: 1.5rem;
+  border-color: var(--input-placeholder);
+}
+
+.legend-wraper {
+  display: flex;
+  align-items: center;
+  gap: 0.325rem;
+  margin-top: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.625rem;
+  padding-bottom: 0.75rem;
+}
+
+.input-wrapper-date {
+  display: flex;
+  gap: 0.625rem;
+
+  .input-wrapper {
+    width: 100%;
   }
 }
 
