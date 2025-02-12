@@ -40,15 +40,15 @@
   --shape-hover: #383d42;
 
   /* customize radio */
-  --blue-radio: #59B2FF;
-  --navy-radio: #6A59FF;
-  --purple-radio: #B259FF;
-  --fuschia-radio: #FF59F9;
-  --pink-radio: #FF598B;
-  --red-radio: #FF5959;
-  --orange-radio: #FF8B59;
-  --yellow-radio: #FFCD59;
-  --lime-radio: #E1FF59;
-  --green-radio: #59FF91;
-  --cyan-radio: #59FFF9;
+  --blue-radio: #59b2ff;
+  --navy-radio: #6a59ff;
+  --purple-radio: #b259ff;
+  --fuschia-radio: #ff59f9;
+  --pink-radio: #ff598b;
+  --red-radio: #ff5959;
+  --orange-radio: #ff8b59;
+  --yellow-radio: #ffcd59;
+  --lime-radio: #e1ff59;
+  --green-radio: #59ff91;
+  --cyan-radio: #59fff9;
 }
