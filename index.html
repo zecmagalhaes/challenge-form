@@ -25,7 +25,7 @@
     </aside>
     <main>
       <h1 class="heading-md">Crie seu convite</h1>
-      <form>
+      <form name="invite-form" id="invite-form">
         <legend class="legend-wraper">
           <img src="assets/icons/calendar.svg" alt="Imagem de Calendário" />
           <span class="heading-sm">Sobre o evento</span>
@@ -197,24 +197,52 @@
           <span class="heading-sm">Dados para contato</span>
         </legend>
         <div class="input-wrapper">
-          <label for="name-event" class="body-sm">Nome</label>
-          <input type="text" placeholder="Nome completo" id="name-event" required/>
+          <label for="first-name" class="body-sm">Nome</label>
+          <input type="text" placeholder="Nome completo" id="first-name" required />
         </div>
         <fieldset class="input-wrapper-date">
           <div class="input-wrapper">
-            <label for="start-event" class="body-sm">E-mail</label>
-            <input type="email" placeholder="exemplo@email.com" id="start-event" required/>
+            <label for="e-mail" class="body-sm">E-mail</label>
+            <input type="email" placeholder="exemplo@email.com" id="e-mail" required />
           </div>
           <div class="input-wrapper">
-            <label for="end-event" class="body-sm">Telefone</label>
-            <input type="text" placeholder="(54) 99999-9999" id="end-event" />
+            <label for="phone" class="body-sm">Telefone</label>
+            <input type="text" placeholder="(54) 99999-9999" id="phone" />
           </div>
         </fieldset>
+        <hr />
+        <div class="gap-16 gap-5">
+          <label class="label-checkbox">
+            <input type="checkbox" id="terms-policy" required />
+            <span class="custom-checkbox"></span>
+            <span class="body-sm">Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política
+                de Privacidade</a></span>
+          </label>
 
-                                                                                  
+          <label class="label-checkbox">
+            <input type="checkbox" id="promotion" />
+            <span class="custom-checkbox"></span>
+            <span class="body-sm">Aceito receber atualizações e promoções por e-mail</span>
+          </label>
+
+          <label class="label-checkbox">
+            <input type="checkbox" id="promotion-sms" />
+            <span class="custom-checkbox"></span>
+            <span class="body-sm">Aceito receber atualizações e promoções por SMS</span>
+          </label>
+        </div>
+
+        <div class="btn-submit">
+          <button type="submit" class="invite-button body-md">
+            <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+            <span>
+              Gerar convite
+            </span>
+          </button>
+        </div>
+      </form>
+    </main>
   </div>
-  </form>
-  </main>
   </div>
   <script src="script.js"></script>
 </body>

@@ -124,6 +124,59 @@ input:checked+.slider:before {
 }
 
 input[type="file"] {
-  display: none; /* Esconde o input original */
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../assets/icons/checkbox.svg");
+  background-size: cover;
+  margin-right: 0.25rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-image: url("../assets/icons/checkbox-checked.svg");
+}
+
+.invite-button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-dark);
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.invite-button:hover {
+  background-color: var(--brand-mid);
+}
+
+.invite-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: end;
+  margin-top: 2.5rem;
 }
 
