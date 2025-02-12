@@ -103,7 +103,6 @@ input[type="radio"]:checked + .radio-custom-inperson {
 
 .radio-option-color {
   display: flex;
-
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
@@ -121,18 +120,17 @@ input[type="radio"]:checked + .radio-custom-inperson {
 }
 
 .radio-inner-color:hover {
-  color: white;
-  border: 0.3rem solid;
+  border: 0.3rem solid white;
 }
 
 .radio-inner-color:checked {
-  color: white;
-  border: 0.3rem solid;
+  border: 0.3rem solid white;
 }
 
 .input-wrapper-radio {
   display: flex;
   gap: 0.625rem;
+
   .input-wrapper {
     width: 100%;
   }
