@@ -59,7 +59,7 @@
   background-color: var(--input-base);
   border: 0.0625rem solid var(--input-stroke);
   border-radius: 3.125rem;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -71,14 +71,14 @@
   bottom: 0.125rem;
   background-color: var(--input-stroke);
   border-radius: 50%;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: var(--shape-button);
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translateX(1.625rem);
   background-color: var(--text-heading);
 }
@@ -92,7 +92,7 @@ input:checked+.slider:before {
 .custom-file-upload {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 .file-label {
@@ -123,7 +123,7 @@ input:checked+.slider:before {
   height: 1rem;
   width: 1rem;
   background-image: url("../assets/icons/upload-after.svg");
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 input[type="file"] {
@@ -182,4 +182,3 @@ input[type="checkbox"]:checked + .custom-checkbox {
   justify-content: end;
   margin-top: 2.5rem;
 }
-
