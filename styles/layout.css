@@ -28,7 +28,7 @@ main {
   overflow: auto;
   background-color: var(--shape-body);
   border-radius: 0.3125rem;
-  padding: 6rem;
+  padding: 2rem;
 }
 
 fieldset {
@@ -101,9 +101,47 @@ hr {
   }
 }
 
+@media (max-width: 1212px) {
+  #invite {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+  }
+
+  .photo {
+    padding-top: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   #invite {
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 1fr;
+  }
+
+  .input-wrapper-date {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-wrapper-radio {
+    flex-direction: column;
+  }
+
+  .custom-file-upload {
+    flex-direction: column;
+
+    span:nth-child(2) {
+      font-size: 0.75rem;
+    }
+
+    span:nth-child(3) {
+      font-size: 0.875rem;
+    }
+  }
+
+  .label-checkbox {
+    span:nth-child(3) {
+      font-size: 11px;
+    }
   }
 }
